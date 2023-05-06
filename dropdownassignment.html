@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown </title>
+</head>
+<body>
+<?php
+    <form action="dropdown.php">
+        <b>Enter first number</b><input type="text" name="v1"><br>
+        <b>Enter second number</b><input type="text" name="v2"><br>
+        <select name="cmb" id="">
+            <option value="options">Choos Operation to be applied</option>
+            <option value="add">ADDITION</option>
+            <option value="sub">SUBTRACTION</option>
+            <option value="mul">MULTIPLICATION</option>
+            <option value="div">DIVISION</option>
+            <option value="mod">MODULUS</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+?>
+    <!-- include("dropdown.php") -->
+    
+</body>
+</html>
