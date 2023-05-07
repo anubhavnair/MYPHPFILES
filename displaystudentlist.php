@@ -16,7 +16,7 @@
     if(isset($_REQUEST["status"])){
 
         if($_REQUEST["status"]==1){
-            echo("<h2>Data Has Been Deleted</h2>");
+            echo("<h2>Data Has Been updated</h2>");
         }
     }
     
@@ -33,6 +33,7 @@
         echo("<th> Student Address </th> ");
         echo("<th> Student Mobile Number </th> ");
         echo("<th>Status</th>");
+        echo("<th> update </th> ");
 
     echo("</tr>");
 
@@ -60,6 +61,12 @@
        echo("<td>");
         $x=$data["sid"];
         echo("<a href='deleteStudent.php?studid=$x' target='_self'>Delete</a>");
+
+       echo("</td>");
+
+       echo("<td>");
+       $x=$data["sid"];
+       echo("<a href='updatestudent.php?roll=$x'>Edit</a>");
 
        echo("</td>");
 
